@@ -1,0 +1,11 @@
+[workspace]
+resolver = "2"
+members = [
+    "hello_polkavm",
+]
+
+[profile.release]
+panic = "abort"
+opt-level = "z"
+lto = true
+codegen-units = 1
